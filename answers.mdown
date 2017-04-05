@@ -1,0 +1,91 @@
+## Answers
+
+1 . 
+
+greet("Steven")
+Hello, Steven
+ => nil 
+
+2 . 
+
+hate_steven?("Steven")
+ => "OMG He's the worst" 
+
+ hate_steven?("Not_Steven")
+ => "You cool" 
+
+3 . 
+
+array = ["apple", "pear", "face", "champagne", "palm tree", "aardvark", "pineapple"]
+array.select {|fruit| fruit.start_with?("a")}
+ => ["apple", "aardvark"] 
+
+4 .
+def word_count(sentence)
+  sentence.split(" ").count
+end
+
+word_count("I am a sentence")
+ => 4 
+
+
+5 . 
+
+rude_greeting("Mari")
+Hey there, Mari
+ => nil 
+
+  rude_greeting()
+Hey there, you jerk
+ => nil 
+
+
+6 . 
+
+puts favorite_animal
+cat
+ => nil 
+
+7 . 
+
+puts best_animal
+cat
+ => nil 
+
+
+8 . 
+
+TypeError: no implicit conversion of Fixnum into String
+
+9 . 
+
+foods = {"pie" => "delicious", "broccoli" => "not delicicious",
+"carrots" => "not delicious", "apples" => "delicious",
+"peanut butter" => "delicious"}
+
+foods.each do |food, taste|
+ if taste == "delicious"
+   puts food
+  end
+end
+
+10 . 
+
+foods.each do |food, taste| 
+  if taste != "delicious"
+     foods.delete(food)
+  end
+end
+
+11 . 
+
+characters = ["Daenerys Targaryen", "Jon Snow" ,"Arya Stark", "Tyrion Lannister", "Sansa Stark", "Cersei Lannister", "Margaery Tyrell"]
+
+downcase_names(characters)
+ => ["Daenerys Targaryen", "Jon Snow", "Arya Stark", "Tyrion Lannister", "Sansa Stark", "Cersei Lannister", "Margaery Tyrell"]
+
+
+12 .
+
+puts archer["Quotes"][rand(archer["Quotes"].length)]
+
